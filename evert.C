@@ -3,7 +3,7 @@
 #include "spline.h"
 #include "sphere.h"
 extern "C" {
-#include <strings.h>
+#include <string.h>
 }
 
 double scale = M_PI;
