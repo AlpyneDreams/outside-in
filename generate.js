@@ -51,18 +51,9 @@ for (const frame of range(frames+1)) {
     for (let v = 0; v < Nv-1; v++) {
         for (let u = 1; u <= Nu-1; u++) {
             let i = (frame*Nu*Nv) + ((v * Nu) + u)
-            print(`f ${i} ${i+Nu} ${i+Nu+1} ${i+1}`)
-            /*if (u <= Nu-1) {
-                print(`l ${i} ${i+1}`)
-            }
-            if (v < Nv-2) {
-                print(`l ${i} ${i+Nu}`)
-            }*/
+            let coords = [i, i+Nu, i+Nu+1, i+1].map(c => c+'//'+c).join(' ')
+            print(`f ${coords}`)
         }
-        /*for (let u = 1; u <= Nu-1; u++) {
-            let i = (v * Nu) + u
-            print(`f ${i} ${i+1} ${i+Nu} ${i+Nu+1}`)
-        }*/
     }
 }
 
