@@ -19,10 +19,10 @@ class ThreeJet {
    { f = d; fu = du; fv = dv; fuu = fuv = fvv = fuuv = fuvv = 0;}
   operator TwoJet() { return TwoJet(f, fu, fv, fuv); }
   operator double() { return f; }
-  operator<(double d) { return f < d; }
-  operator>(double d) { return f > d; }
-  operator<=(double d) { return f <= d; }
-  operator>=(double d) { return f >= d; }
+  bool operator<(double d) { return f < d; }
+  bool operator>(double d) { return f > d; }
+  bool operator<=(double d) { return f <= d; }
+  bool operator>=(double d) { return f >= d; }
   void operator %=(double d)
    { f = fmod(f, d); if (f < 0) f += d; }
   friend ThreeJet operator+(const ThreeJet x, const ThreeJet y);

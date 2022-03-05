@@ -19,10 +19,10 @@ class TwoJet {
   TwoJet(double d, double du, double dv, double duv)
    { f = d; fu = du; fv = dv; fuv = duv; }
   operator double() { return f; }
-  operator<(double d) { return f < d; }
-  operator>(double d) { return f > d; }
-  operator<=(double d) { return f <= d; }
-  operator>=(double d) { return f >= d; }
+  bool operator<(double d) { return f < d; }
+  bool operator>(double d) { return f > d; }
+  bool operator<=(double d) { return f <= d; }
+  bool operator>=(double d) { return f >= d; }
   double df_du() { return fu; }
   double df_dv() { return fv; }
   double d2f_dudv() { return fuv; }

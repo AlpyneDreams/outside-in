@@ -1,6 +1,6 @@
 #include "figureeight.h"
 
-extern n_strips;
+extern int n_strips;
 
 TwoJetVec FigureEight(
   TwoJetVec w, TwoJetVec h, TwoJetVec bend, TwoJet form, TwoJet v
