@@ -2,5 +2,8 @@
     "files.associations": {
         "*.C": "cpp",
         "*.h": "cpp"
+    },
+    "files.exclude": {
+        "*.o": true
     }
 }
